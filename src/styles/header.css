@@ -1,0 +1,57 @@
+header {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 235, 0);
+  background: linear-gradient(
+    176deg,
+    rgba(255, 235, 0, 1) 0%,
+    rgba(118, 121, 9, 1) 50%,
+    rgba(36, 31, 0, 0.7) 100%
+  );
+  padding: 0.2rem 3.5rem;
+  border-bottom: 1px solid black;
+}
+
+header > h1 {
+  margin-left: 5rem;
+}
+
+.navbar {
+  width: 700px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.search-box-input {
+  width: 350px;
+  height: 30px;
+  border-radius: 13px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navbar > a:hover {
+  border-bottom: 2px solid rgb(62, 60, 60);
+}
+
+.navbar > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.carrinho {
+  width: 28px;
+}

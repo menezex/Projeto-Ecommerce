@@ -1,0 +1,121 @@
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-column: repeat(2, 1fr);
+  grid-template-areas:
+    "a b b"
+    "a b b"
+    "a b b";
+}
+
+.categoria-lateral {
+  grid-area: a;
+  text-align: center;
+  max-width: 180px;
+  padding: 1rem;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-right: 1px solid black;
+}
+
+.categoria-lateral > h2 {
+  text-decoration: underline;
+}
+
+.listagem-produtos {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  margin-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listagem-produtos > button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  color: rgba(5, 5, 2, 0.918);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.listagem-produtos > button:hover {
+  border-bottom: 2px solid black;
+  transition: 0.1s;
+}
+
+.catalogo-produtos {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 230px;
+  grid-template-areas: "cardProdutos";
+  gap: 20px;
+  padding: 1rem;
+}
+
+.cardProdutos {
+  height: 230px;
+  width: 350px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.cardProdutos:hover {
+  transition: 0.5s;
+  box-shadow: 8px 5px 10px 1px black;
+}
+
+.img-produto {
+  width: 60%;
+  height: 100%;
+}
+
+.descricao-produto {
+  text-align: justify;
+  line-height: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.nome-produto {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.comprar-produto {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: start;
+}
+
+.btn-comprar {
+  padding: 5px;
+  margin-top: -5px;
+  width: 100%;
+  border: none;
+  background-color: #73817b;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.btn-comprar:hover {
+  transition: 0.3s;
+  background-color: rgb(199, 173, 26);
+  font-weight: 700;
+  color: black;
+}
