@@ -55,3 +55,24 @@ header > h1 {
 .carrinho {
   width: 28px;
 }
+
+.carrinho-de-compra {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  width: 180px;
+  height: 450px;
+  background-color: black;
+  border-radius: 15px;
+  display: none;
+}
+
+.carrinho-de-compra-enable {
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  width: 180px;
+  height: 450px;
+  background-color: black;
+  border-radius: 15px;
+}

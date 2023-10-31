@@ -26,8 +26,8 @@
   display: flex;
   flex-direction: column;
   height: 40%;
-  margin-top: 10px;
-  justify-content: space-around;
+  margin-top: 50px;
+  gap: 35px;
   align-items: center;
 }
 
@@ -118,4 +118,8 @@
   background-color: rgb(199, 173, 26);
   font-weight: 700;
   color: black;
+}
+
+.enable-produt {
+  display: none;
 }
